@@ -1,7 +1,13 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
+
+
 <head>
+  <script src="https://www.gstatic.com/firebasejs/10.2.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.2.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.2.5/firebase-firestore.js"></script>
+  <script src="js/myapp.js"></script>
   <meta charset="UTF-8">
   <title>MidTerm Exam #2 - Web Development - CCTB</title>
   <meta name="description" content="MidTerm Exam #2 - Web Development - CCTB">
@@ -93,7 +99,7 @@
             </div>
 
             <div class="w-100 d-inline-grid gap-auto-3">
-              <a title="Gmail Login" href="#!" class="btn bg-googleplay border w-100 mx-0 text-gray-700">
+              <a href="#" onclick="signInWithGoogle()" title="Gmail Login" href="#!" class="btn bg-googleplay border w-100 mx-0 text-gray-700">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-google text-white" viewBox="0 0 16 16">
                   <path
